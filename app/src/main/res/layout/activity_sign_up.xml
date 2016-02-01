@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.SignUpActivity"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Register"
+        android:id="@+id/text_sin_up"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/radioButton_makka"
+        android:layout_toStartOf="@+id/radioButton_makka"
+        android:textColor="#fb0505"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/first_name"
+        android:id="@+id/text_first_name"
+        android:textColor="#8e6005"
+        android:layout_below="@+id/text_sin_up"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_first_name"
+        android:layout_alignTop="@+id/text_first_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/et_last_name"
+        android:layout_alignEnd="@+id/et_last_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/last_name"
+        android:id="@+id/text_last_name"
+        android:textColor="#aba006"
+        android:layout_below="@+id/et_first_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_last_name"
+        android:layout_below="@+id/et_first_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/et_email"
+        android:layout_alignEnd="@+id/et_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/email"
+        android:id="@+id/text_email"
+        android:textSize="17sp"
+        android:textColor="#940ac2"
+        android:layout_below="@+id/et_last_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/et_email"
+        android:layout_alignTop="@+id/text_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/text_sin_up"
+        android:layout_alignRight="@+id/text_sin_up"
+        android:layout_alignEnd="@+id/text_sin_up" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/phone_number"
+        android:id="@+id/text_phone_number"
+        android:textColor="#3a0edc"
+        android:layout_alignBottom="@+id/et_phone_number"
+        android:layout_alignLeft="@+id/text_first_name"
+        android:layout_alignStart="@+id/text_first_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/et_phone_number"
+        android:layout_below="@+id/et_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/text_city"
+        android:layout_toLeftOf="@+id/text_city"
+        android:layout_alignRight="@+id/et_email"
+        android:layout_alignEnd="@+id/et_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/city"
+        android:id="@+id/text_city"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/text_phone_number"
+        android:layout_alignEnd="@+id/text_phone_number"
+        android:textColor="#030000" />
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/madina"
+        android:id="@+id/radioButton_madina"
+        android:layout_alignTop="@+id/text_city"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#1fecb2" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jeddah"
+        android:id="@+id/radioButton_jeddah"
+        android:layout_alignTop="@+id/radioButton_makka"
+        android:layout_centerHorizontal="true"
+        android:textColor="#eb0909" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/makka"
+        android:id="@+id/radioButton_makka"
+        android:layout_alignTop="@+id/text_city"
+        android:layout_toLeftOf="@+id/text_last_name"
+        android:layout_toStartOf="@+id/text_last_name"
+        android:textColor="#2344af" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/address"
+        android:id="@+id/text_address"
+        android:textColor="#bf3f08"
+        android:layout_alignBottom="@+id/et_address"
+        android:layout_alignLeft="@+id/text_city"
+        android:layout_alignStart="@+id/text_city" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_address"
+        android:layout_below="@+id/radioButton_madina"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/text_address"
+        android:layout_toLeftOf="@+id/text_address"
+        android:layout_alignRight="@+id/et_phone_number"
+        android:layout_alignEnd="@+id/et_phone_number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_share_location"
+        android:layout_above="@+id/et_password"
+        android:layout_alignLeft="@+id/btn_cancel"
+        android:layout_alignStart="@+id/btn_cancel"
+        android:layout_below="@+id/et_address"
+        android:layout_toLeftOf="@+id/radioButton_jeddah"
+        android:layout_toStartOf="@+id/radioButton_jeddah"
+        android:background="@drawable/sharelocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/password"
+        android:id="@+id/text_password"
+        android:textColor="#cc881515"
+        android:layout_below="@+id/et_address"
+        android:layout_alignLeft="@+id/text_address"
+        android:layout_alignStart="@+id/text_address"
+        android:layout_marginTop="67dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_password"
+        android:layout_alignTop="@+id/text_password"
+        android:layout_alignRight="@+id/text_sin_up"
+        android:layout_alignEnd="@+id/text_sin_up"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:id="@+id/btn_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/et_password"
+        android:layout_toEndOf="@+id/et_password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/btn_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/radioButton_madina"
+        android:layout_alignEnd="@+id/radioButton_madina" />
+
+</RelativeLayout>
+
